@@ -650,6 +650,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -960,6 +964,11 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-3\.5{
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
 }
 
 .pb-14{
@@ -1355,6 +1364,14 @@ video {
 
   .lg\:pl-5{
     padding-left: 1.25rem;
+  }
+
+  .lg\:pt-1{
+    padding-top: 0.25rem;
+  }
+
+  .lg\:pt-20{
+    padding-top: 5rem;
   }
 
   .lg\:text-left{
