@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -638,20 +638,16 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-6{
   margin-top: 1.5rem;
 }
 
-.mt-7{
-  margin-top: 1.75rem;
-}
-
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .box-border{
@@ -946,9 +942,9 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-3\.5{
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
 }
 
 .py-5{
@@ -964,11 +960,6 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-3\.5{
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
 }
 
 .pb-14{
@@ -1063,14 +1054,6 @@ video {
   padding-top: 2rem;
 }
 
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pt-14{
-  padding-top: 3.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1084,7 +1067,7 @@ video {
 }
 
 .font-bodyfont{
-  font-family: source serif 4;
+  font-family: Nunito;
 }
 
 .text-2xl{
@@ -1148,6 +1131,11 @@ video {
 
 .tracking-tight{
   letter-spacing: -0.025em;
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .text-gray-600{
@@ -1354,24 +1342,20 @@ video {
     padding-bottom: 1rem;
   }
 
-  .lg\:pt-8{
-    padding-top: 2rem;
+  .lg\:pl-5{
+    padding-left: 1.25rem;
   }
 
   .lg\:pt-14{
     padding-top: 3.5rem;
   }
 
-  .lg\:pl-5{
-    padding-left: 1.25rem;
-  }
-
-  .lg\:pt-1{
-    padding-top: 0.25rem;
-  }
-
   .lg\:pt-20{
     padding-top: 5rem;
+  }
+
+  .lg\:pt-8{
+    padding-top: 2rem;
   }
 
   .lg\:text-left{

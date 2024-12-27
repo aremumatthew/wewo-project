@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bodyfont: ['source serif 4']
+        bodyfont: ['Nunito']
       }
     },
   },
