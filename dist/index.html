@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="output.css">
   <title>Wewo</title>
 </head>
-<body class=" w-full h-svh p-0 m-0 box-border font-bodyFont overflow-hidden">
+<body class=" w-full h-svh p-0 m-0 box-border font-bodyFont">
   <header class="bg-[url('images/hero-picture.png')] bg-cover bg-blend-overlay bg-stone-950 w-full px-7 py-8 lg:pt-8 lg:pb-24 lg:px-16 relative">
     <article class="flex w-full md:flex lg:hidden">
       <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo">
@@ -32,20 +32,20 @@
     <nav class="w-full">
       <ul id="navList" class=" text-right pr-8 bg-stone-800  lg:hidden fixed left-0 top-0 h-full w-0 pt-14 overflow-hidden transition-all">
         <li class="pb-8"><i onclick="closeNav()" class="fa-brands fa-xing text-white text-3xl"></i></li>
-        <li class="pt-8 list-none text-2xl w-full"><a class="decoration-0 text-white hover:underline w-full" href="#">Home</a></li>
-        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#">Product</a></li>
-        <li class="pt-8 list-none text-2xl w-full "><a class="decoration-0 text-white hover:underline w-full" href="#">About Us</a></li>
-        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#">Contact</a></li>
+        <li class="pt-8 list-none text-2xl w-full"><a class="decoration-0 text-white hover:underline w-full" href="index.html">Home</a></li>
+        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="products.html">Product</a></li>
+        <li class="pt-8 list-none text-2xl w-full "><a class="decoration-0 text-white hover:underline w-full" href="about.html">About Us</a></li>
+        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#contain">Contact</a></li>
       </ul>
   
       <!--navigation list-->
     
       <ul class="hidden lg:flex  w-5/6 align-middle">
         <li class="mr-auto w-32"><img class="width-logo" src="images/Wewo logo.png" alt="logo"></li>
-        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#">Home</a></li>
-        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#">Product</a></li>
-        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#">About Us</a></li>
-        <li class="text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#">Contact</a></li>
+        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="index.html">Home</a></li>
+        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="products.html">Product</a></li>
+        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="about.html">About Us</a></li>
+        <li class="text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#contact">Contact</a></li>
       </ul>
     </nav>
     
@@ -107,7 +107,7 @@
     </section>
     <!-- The about section-->
     <article class=" px-3 bg-stone-800 lg:flex justify-center w-full lg:section2-h py-10 lg:py-40 lg:px-32">
-      <video class="w-auto block mx-auto px-3" src="images/Video3-about.mp" autoplay alt="product-image"></video>
+      <video class="w-auto block mx-auto px-3" src="images/Video3-about.mp4" autoplay alt="product-image"></video>
       <section class="w-full lg:ml-14">
         <section class="text-center lg:text-left mt-12  w-full" >
           <h1 class="text-white text-4xl lg:text-6xl font-bold mb-3 lg:mb-14 mt-12 md:px-12">About Us</h1>
@@ -138,6 +138,7 @@
         </section>
       </section>
     </article>
+
     <article class="width-full bg-stone-800 pb-16 px-3">
       <h2 class="text-center text-nowrap text-white text-2xl font-semibold pt-8 lg:text-4xl pb-3">Our Products</h2>
       <hr class="text-stone-400 hidden lg:block lg:pb-10">
@@ -179,7 +180,7 @@
           </section>
         </section>  
       </section>
-      
+
       <section class="lg:flex lg:gap-3">
         <section class= "flex w-full gap-2 lg:gap-3 pt-6">
           <section class="w-full">
@@ -217,7 +218,9 @@
           </section>
         </section>  
       </section>
+
     </article>
+
     <article class="bg-stone-800 w-full px-3 py-6">
       <section class="w-full">
         <h3 class="text-center text-white font-medium pt-4">TESTIMONIALS</h3>
@@ -263,6 +266,7 @@
     </article>
   </main>
   <footer class="bg-stone-800 w-full pt-5">
+    <!-- i'm thinkig of removing this social links-->
     <section class=" bg-gradient-to-b from-black to-stone-800 py-5 mb-10 px-4">
       <span class=" w-full flex gap-2 lg:gap-8 justify-center">
         <button class="text-white bg-blue-800 rounded-full w-10 h-10 text-center" aria-label="facebook-link"><a href="#"><i class="fa-brands fa-facebook"></i></a></button>
@@ -272,7 +276,8 @@
         <button class="text-white bg-black rounded-full w-10 h-10 text-center " aria-label="tiktok-link"><a href="#"><i class="fa-brands fa-tiktok "></i></a></button>
       </span>
     </section>
-    <section class=" width-full px-3 md:px-32 gap-2 md:gap-28 md:flex md:pt-16">
+    <!-- Ends here-->
+    <section id="contact" class=" width-full px-3 md:px-32 gap-2 md:gap-28 md:flex md:pt-16">
       <section class="pb-8">
         <section class="pb-5">
           <h2 class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white w-8">Products</h2>
@@ -313,8 +318,18 @@
             <h3 class="text-white pl-6 hover:underline focus:underline decoration-white w-8">Nigeria</h3>
             <h3 class="text-white pl-6 hover:underline focus:underline decoration-white ">South Africa</h3>
         </section>
+        <!-- This is the new social links-->
+        <section class=" py-5 mb-10 px-4">
+          <span class=" w-full flex gap-2 lg:gap-8 justify-center lg:justify-start">
+            <button class="text-white bg-stone-950 rounded-full w-10 h-10 text-center" aria-label="facebook-link"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
+            <button class="text-white bg-stone-950 rounded-full w-10 h-10 text-center " aria-label="instagram-link"><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
+            <button class="text-white bg-black rounded-full w-10 h-10 text-center " aria-label="xtwitter-link"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></button>
+            <button class="text-white bg-stone-950 rounded-full w-10 h-10 text-center " aria-label="snapchat-link"><a href="#"><i class="fa-brands fa-snapchat"></i></a></button>
+            <button class="text-white bg-black rounded-full w-10 h-10 text-center " aria-label="tiktok-link"><a href="#"><i class="fa-brands fa-tiktok "></i></a></button>
+          </span>
+        </section>
+        <!-- End here-->
       </section>
-
     </section>
 
     <section class="bg-gradient-to-b from-stone-800 to-black py-2">
