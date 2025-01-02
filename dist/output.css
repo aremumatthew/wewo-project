@@ -694,6 +694,10 @@ video {
   height: 100svh;
 }
 
+.h-\[0px\]{
+  height: 0px;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -1103,6 +1107,10 @@ video {
   padding-top: 2rem;
 }
 
+.pt-0{
+  padding-top: 0px;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1232,6 +1240,12 @@ video {
 
 .bg-blend-overlay{
   background-blend-mode: overlay;
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .hover\:underline:hover{

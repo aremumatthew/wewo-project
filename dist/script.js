@@ -1,8 +1,8 @@
 function openNav(){
 const navElement = document.getElementById('navList');
- navElement.style.width = '100%';
+ navElement.style.height = '100%';
 }
 function closeNav(){
  const navElement = document.getElementById('navList');
- navElement.style.width = '0px';
+ navElement.style.height = '0px';
 }

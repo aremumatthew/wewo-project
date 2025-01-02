@@ -23,15 +23,17 @@
 </head>
 <body class=" w-full h-svh p-0 m-0 box-border font-bodyFont">
   <header class="bg-[url('images/hero-picture.png')] bg-cover bg-blend-overlay bg-stone-950 w-full px-7 py-8 lg:pt-8 lg:pb-24 lg:px-16 relative">
-    <article class="flex w-full md:flex lg:hidden">
-      <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo">
-      <button aria-label="Toggle navigation" class="ml-auto text-white">
-      <i onclick="openNav()" class="fa-solid fa-bars text-3xl"></i>
-      </button>
-    </article>
     <nav class="w-full">
-      <ul id="navList" class=" text-right pr-8 bg-stone-800 lg:hidden fixed right-0 top-0 h-full w-[0px] pt-14 overflow-hidden transition-allzx">
-        <li class="pb-8"><i onclick="closeNav()" class="fa-brands fa-xing text-white text-3xl"></i></li>
+      
+      <article class="flex w-full md:flex lg:hidden">
+        <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo">
+        <button aria-label="Toggle navigation" class="ml-auto text-white">
+        <i onclick="openNav()" class="fa-solid fa-bars text-3xl"></i>
+        </button>
+      </article>
+
+      <ul id="navList" class=" text-right pr-8 bg-stone-800 lg:hidden fixed right-0 top-0 w-full h-[0px] overflow-hidden transition-all">
+        <li class="pb-8 pt-14"><i onclick="closeNav()" class="fa-brands fa-xing text-white text-3xl"></i></li>
         <li class="pt-8 list-none text-2xl w-full"><a class="decoration-0 text-white hover:underline w-full" href="index.html">Home</a></li>
         <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="products.html">Product</a></li>
         <li class="pt-8 list-none text-2xl w-full "><a class="decoration-0 text-white hover:underline w-full" href="about.html">About Us</a></li>

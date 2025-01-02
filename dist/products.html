@@ -23,15 +23,25 @@
 </head>
 <body class="font-bodyfont">
   <header class="bg-[url('images/body-cleansers.jpg')] bg-cover bg-blend-overlay bg-stone-900 w-full px-7 py-8 lg:pt-8 lg:pb-24 lg:px-16 md:h-[600px] lg:h-[750px] relative">
-    <article class="flex w-full md:flex lg:hidden">
-    <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo">
-    <button aria-label="Toggle navigation" class="ml-auto text-white">
-      <i class="fa-solid fa-bars text-3xl"></i>
-    </button>
-    </article>
   
-    <!--navigation list-->
     <nav>
+      <article class="flex w-full md:flex lg:hidden">
+        <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo">
+        <button aria-label="Toggle navigation" class="ml-auto text-white">
+        <i onclick="openNav()" class="fa-solid fa-bars text-3xl"></i>
+        </button>
+      </article>
+
+    <!--navigation list-->
+
+      <ul id="navList" class=" text-right pr-8 bg-stone-800 lg:hidden fixed right-0 top-0 w-full h-[0px] overflow-hidden transition-all">
+        <li class="pb-8 pt-14"><i onclick="closeNav()" class="fa-brands fa-xing text-white text-3xl"></i></li>
+        <li class="pt-8 list-none text-2xl w-full"><a class="decoration-0 text-white hover:underline w-full" href="index.html">Home</a></li>
+        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="products.html">Product</a></li>
+        <li class="pt-8 list-none text-2xl w-full "><a class="decoration-0 text-white hover:underline w-full" href="about.html">About Us</a></li>
+        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#contain">Contact</a></li>
+      </ul>
+
       <ul class="hidden lg:flex  w-5/6 align-middle">
         <li class="mr-auto w-32"><img class="width-logo" src="images/Wewo logo.png" alt="logo"></li>
         <li class=" text-2xl pr-14 list-none pt-4"><a class="decoration-0 text-white" href="index.html">Home</a></li>
@@ -41,12 +51,6 @@
       </ul>
     </nav>
     
-   <ul class="hidden w-full flex-col text-center bg-yellow-300  lg:hidden absolute top-0 left-0 right-0 h-3/4 z-100 pt-20">
-      <li class="pt-8 list-none"><a class="decoration-0 text-white" href="index.html">Home</a></li>
-      <li class="pt-8 list-none "><a class="decoration-0 text-white" href="products.html">Product</a></li>
-      <li class="pt-8 list-none"><a class="decoration-0 text-white" href="about.html">About Us</a></li>
-      <li class="pt-8 list-none"><a class="decoration-0 text-white" href="#contact">Contact</a></li>
-    </ul>
     <article class="flex w-full  ">
       <section class="lg:pt-20 lg:pl-5">
         <h2 class="text-white pt-20 text-2xl font-normal tracking-tight text-nowrap lg:text-3xl lg:font-medium">
