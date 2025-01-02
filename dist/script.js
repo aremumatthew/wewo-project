@@ -4,5 +4,5 @@ const navElement = document.getElementById('navList');
 }
 function closeNav(){
  const navElement = document.getElementById('navList');
- navElement.style.width = '0';
+ navElement.style.width = '0px';
 }
