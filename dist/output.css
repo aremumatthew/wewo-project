@@ -1285,8 +1285,17 @@ video {
     width: 8rem;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
   .md\:gap-28{
     gap: 7rem;
+  }
+
+  .md\:bg-stone-950{
+    --tw-bg-opacity: 1;
+    background-color: rgb(12 10 9 / var(--tw-bg-opacity, 1));
   }
 
   .md\:px-12{
