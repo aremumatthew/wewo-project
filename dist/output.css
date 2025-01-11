@@ -1198,6 +1198,10 @@ video {
   font-weight: 100;
 }
 
+.font-extralight{
+  font-weight: 200;
+}
+
 .tracking-tight{
   letter-spacing: -0.025em;
 }
@@ -1357,6 +1361,10 @@ video {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .md\:font-light{
+    font-weight: 300;
   }
 }
 
