@@ -1,187 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Matthew / Nabil">
-  <meta name="keyword" content="Beauty + Skincare + Products + Glow">
-  <meta name="description" content="Skin and face care products">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matthew / Nabil" />
+    <meta name="keyword" content="Beauty + Skincare + Products + Glow" />
+    <meta name="description" content="Skin and face care products" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
+    <!-- setting web logo image-->
+    <link rel="icon" href="images/Wewo logo.png" />
+    <!--linking font awesome library file-->
+    <link rel="stylesheet" href="fonts/css/all.css" type="text/css" />
 
-  <!--linking font awesome library file-->
-  <link rel="stylesheet" href="fonts/css/all.css" type="text/css">
-
-  
     <!-- cdn for online font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="output.css">
-  <title>About</title>
-</head>
-<body class="font-bodyfont">
-  <header class="bg-[url('images/hero-picture.png')] bg-cover bg-blend-overlay bg-stone-900  md:bg-stone-950  w-full px-7 py-8 lg:pt-8 lg:pb-24 lg:px-16 relative">
-    <nav>
-      
-    <article class="flex w-full md:flex lg:hidden">
-      <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo">
-      <button aria-label="Toggle navigation" class="ml-auto text-white">
-      <i onclick="openNav()" class="fa-solid fa-bars text-3xl"></i>
-      </button>
-    </article>
-    <!--navigation list-->
-      <ul id="navList" class=" text-right pr-8 bg-stone-800 lg:hidden fixed right-0 top-0 w-full h-[0px] overflow-hidden transition-all z-20">
-        <li class="pb-8 pt-14"><i onclick="closeNav()" class="fa-brands fa-xing text-white text-3xl"></i></li>
-        <li class="pt-8 list-none text-2xl w-full"><a class="decoration-0 text-white hover:underline w-full" href="index.html">Home</a></li>
-        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="products.html">Product</a></li>
-        <li class="pt-8 list-none text-2xl w-full "><a class="decoration-0 text-white hover:underline w-full" href="about.html">About Us</a></li>
-        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#contain">Contact</a></li>
-      </ul>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <title>About</title>
+  </head>
+  <body class="font-bodyfont">
+    <header
+      class="bg-[url('images/hero-picture.png')] bg-cover bg-blend-overlay bg-stone-900 md:bg-stone-950 w-full px-7 py-8 lg:pt-8 lg:pb-24 lg:px-16 relative"
+    >
+      <nav>
+        <article class="flex w-full md:flex lg:hidden">
+          <img class="w-20 md:w-28" src="images/Wewo logo.png" alt="logo" />
+          <button aria-label="Toggle navigation" class="ml-auto text-white">
+            <i onclick="openNav()" class="fa-solid fa-bars text-3xl"></i>
+          </button>
+        </article>
+        <!--navigation list-->
+        <ul
+          id="navList"
+          class="text-right pr-8 bg-stone-800 lg:hidden fixed right-0 top-0 w-full h-[0px] overflow-hidden transition-all z-20"
+        >
+          <li class="pb-8 pt-14">
+            <i
+              onclick="closeNav()"
+              class="fa-brands fa-xing text-white text-3xl"
+            ></i>
+          </li>
+          <li class="pt-8 list-none text-2xl w-full">
+            <a
+              class="decoration-0 text-white hover:underline w-full"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="pt-8 text-2xl w-full list-none">
+            <a
+              class="decoration-0 text-white hover:underline w-full"
+              href="products.html"
+              >Product</a
+            >
+          </li>
+          <li class="pt-8 list-none text-2xl w-full">
+            <a
+              class="decoration-0 text-white hover:underline w-full"
+              href="about.html"
+              >About Us</a
+            >
+          </li>
+          <li class="pt-8 text-2xl w-full list-none">
+            <a
+              class="decoration-0 text-white hover:underline w-full"
+              href="#contain"
+              >Contact</a
+            >
+          </li>
+        </ul>
 
-      <ul class="hidden lg:flex  w-5/6 align-middle">
-        <li class="mr-auto w-32"><img class="width-logo" src="images/Wewo logo.png" alt="logo"></li>
-        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="index.html">Home</a></li>
-        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="products.html">Product</a></li>
-        <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="about.html">About Us</a></li>
-        <li class="text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <article class="flex w-full ">
-      <section class="lg:pt-20 lg:pl-5">
-        <h2 class="text-white pt-20 text-2xl font-normal tracking-tight text-nowrap lg:text-3xl lg:font-medium">
-          Discover the power of nature<br>  with our solutions for acne,<br> ageing and pigmentation.
-        </h2>
-        <h4 class="text-white pt-3 text-xl text-nowrap lg:text-xl lg:font-medium"> Your skin transformed holistically!</h4>
-        <h5 class="text-white font-thin text-xs  lg:font-extralight">We are  your holistic access to better
-           skincare choice !
-        </h5>  
-        <section class="mt-10 flex gap-10 ">
-          <div><button class="bg-orange-300 rounded px-4 py-3.5 border-none text-nowrap text-stone-700">Explore More</button></div>
-          <div><button class=" bg-stone-800 px-6 py-3 border-solid border-2 border-orange-300 text-white rounded text-nowrap">Shop Now</button></div>
+        <ul class="hidden lg:flex w-5/6 align-middle">
+          <li class="mr-auto w-32">
+            <img class="width-logo" src="images/Wewo logo.png" alt="logo" />
+          </li>
+          <li class="text-2xl pr-20 list-none pt-4">
+            <a class="decoration-0 text-white" href="index.html">Home</a>
+          </li>
+          <li class="text-2xl pr-20 list-none pt-4">
+            <a class="decoration-0 text-white" href="products.html">Product</a>
+          </li>
+          <li class="text-2xl pr-20 list-none pt-4">
+            <a class="decoration-0 text-white" href="about.html">About Us</a>
+          </li>
+          <li class="text-2xl pr-20 list-none pt-4">
+            <button class="">
+              <a
+                class="decoration-0 text-white hover:border-solid hover:border-orange-300 hover:border-2 transition-all hover:rounded-3xl hover:p-1 hover:px-4 hover:text-base hover:text-orange-300"
+                href="#contact"
+                >Contact</a
+              >
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <article class="flex w-full">
+        <section class="lg:pt-20 lg:pl-5">
+          <h2
+            class="text-white pt-20 text-2xl font-normal tracking-tight text-nowrap lg:text-3xl lg:font-medium"
+          >
+            Discover the power of nature<br />
+            with our solutions for acne,<br />
+            ageing and pigmentation.
+          </h2>
+          <h4
+            class="text-white pt-3 text-xl text-nowrap lg:text-xl lg:font-medium"
+          >
+            Your skin transformed holistically!
+          </h4>
+          <h5 class="text-white font-thin text-xs lg:font-extralight">
+            We are your holistic access to better skincare choice !
+          </h5>
+          <section class="mt-10 flex gap-10">
+            <div>
+              <button
+                class="bg-orange-300 rounded px-4 py-3.5 border-none text-nowrap text-stone-700"
+              >
+                <a href="/dist/about.html"></a>Explore More
+              </button>
+            </div>
+            <div>
+              <button
+                class="bg-stone-800 px-6 py-3 border-solid border-2 border-orange-300 text-white rounded text-nowrap"
+              >
+                <a href="/dist/products.html">Shop Now</a>
+              </button>
+            </div>
+          </section>
         </section>
-      </section>
-      <img class="hidden md:block lg:block mt-4 mr-5 ml-auto " src="images/hero-picture.png" alt="image">
-    </article>
-    <article class=" hidden w-full bg-orange-300 absolute left-0 right-0 h-20 md:bottom-5 md:flex lg:bottom-8 lg:flex items-center" >
-      <h3 class="text-stone-700 text-xl pl-24" >Gentle Exfoliating Body</h3>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </article>
-  </header>
-  <main class="bg-stone-900">
-    <section class=" w-full px-4 pt-7 lg:pt-14 lg:px-24">
-      <h1 class="text-3xl text-white font-normal pb-8">
-        About Us
-      </h1>
-      <span>
-        <p class="text-slate-300 pb-2 text-sm font-extralight md:font-light">
-        Welcome to *Wewo Botanical Ghana*, your trusted partner in achieving radiant, healthy skin. At Wewo Botanical, we believe that skincare is more than just a routine — it’s a journey to self-care and confidence. Rooted in the power of nature and backed by science, we create products that cater to diverse skin needs, delivering effective and sustainable results.
-        </p>
-        <p class="text-slate-300 font-extralight md:font-light pb-2 text-sm">
-        Our brand is built on a foundation of quality, integrity, and a passion for enhancing natural beauty. We meticulously source the finest ingredients and combine them with innovative formulations to provide you with skincare solutions that are gentle yet powerful. From tackling hyperpigmentation, treating acne breakouts, skin irritations (rosacea) to promoting a healthy glow, every product is designed with care and expertise to meet your skin’s unique needs.
-        </p>
-        <p class="text-slate-300 font-extralight md:font-light pb-2 text-sm">
-        At Wewo Botanical, we’re not just about products — we’re about building relationships. We value the trust you place in us and are committed to guiding you on your skincare journey with personalized consultations, expert advice, and products that truly make a difference.
-        </p>
-        <p class="text-slate-300 font-extralight md:font-light text-sm">
+        <img
+          class="hidden md:block lg:block mt-4 mr-5 ml-auto"
+          src="images/hero-picture.png"
+          alt="image"
+        />
+      </article>
+      <article
+        class="hidden w-full bg-orange-300 absolute left-0 right-0 h-20 md:bottom-5 md:flex lg:bottom-8 lg:flex items-center"
+      >
+        <h3 class="text-stone-700 text-xl pl-24">Gentle Exfoliating Body</h3>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </article>
+    </header>
+    <main class="bg-stone-900">
+      <section class="w-full px-4 pt-7 lg:pt-14 lg:px-24">
+        <h1 class="text-3xl text-white font-normal pb-8">About Us</h1>
+        <span>
+          <p class="text-slate-300 pb-2 text-sm font-extralight md:font-light">
+            Welcome to *Wewo Botanical Ghana*, your trusted partner in achieving
+            radiant, healthy skin. At Wewo Botanical, we believe that skincare
+            is more than just a routine — it’s a journey to self-care and
+            confidence. Rooted in the power of nature and backed by science, we
+            create products that cater to diverse skin needs, delivering
+            effective and sustainable results.
+          </p>
+          <p class="text-slate-300 font-extralight md:font-light pb-2 text-sm">
+            Our brand is built on a foundation of quality, integrity, and a
+            passion for enhancing natural beauty. We meticulously source the
+            finest ingredients and combine them with innovative formulations to
+            provide you with skincare solutions that are gentle yet powerful.
+            From tackling hyperpigmentation, treating acne breakouts, skin
+            irritations (rosacea) to promoting a healthy glow, every product is
+            designed with care and expertise to meet your skin’s unique needs.
+          </p>
+          <p class="text-slate-300 font-extralight md:font-light pb-2 text-sm">
+            At Wewo Botanical, we’re not just about products — we’re about
+            building relationships. We value the trust you place in us and are
+            committed to guiding you on your skincare journey with personalized
+            consultations, expert advice, and products that truly make a
+            difference.
+          </p>
+          <p class="text-slate-300 font-extralight md:font-light text-sm">
             Join us as we redefine skincare, one radiant complexion at a time.
-        </p>
-      </span>
-    <section class="w-full flex gap-6 pb-5 pt-10">
-      <article class="flex">
-        <i class="fa-solid fa-medal text-slate-300 text-4xl pt-1.5 pr-2"></i>
-        <section>
-          <h2 class="text-2xl text-slate-300 font-bold">5years</h2>
-          <h4 class="text-slate-300">of sales</h4></div>
-        </section>
-      </article>
+          </p>
+        </span>
 
-      <article class="flex">
-        <i class="fa-solid fa-clipboard text-slate-300 text-4xl pr-2 pt-1.5"></i>
-        <section>
-          <h2 class="text-2xl text-slate-300 font-bold">500+</h2>
-          <h4 class="text-slate-300">Delivery</h4>
+        <section class="w-full flex gap-6 pb-5 pt-20 mr-auto ml-auto">
+          <article class="flex md:w-1/2 md:bg-orange-300 rounded-lg">
+            <article class="flex pt-10 mx-auto">
+              <i
+                class="fa-solid fa-medal text-slate-900 text-4xl md:text-6xl pt-1.5 pr-4"
+              ></i>
+              <section>
+                <h2 class="text-4xl text-slate-900 font-extrabold">5years</h2>
+                <h4 class="text-slate-900">of sales</h4>
+              </section>
+            </article>
+          </article>
+
+          <article class="flex md:w-1/2 md:h-48 md:bg-orange-300 rounded-lg">
+            <article class="mx-auto flex pt-10">
+              <i
+                class="fa-solid fa-clipboard text-slate-900 text-4xl md:text-6xl pr-4 pt-1.5"
+              ></i>
+              <section>
+                <h2 class="text-4xl text-slate-900 font-extrabold">500+</h2>
+                <h4 class="text-slate-900">Delivery</h4>
+              </section>
+            </article>
+          </article>
         </section>
-      </article>
-    </section>
-    
-    <section class="w-full pb-14">
-      <article class="pb-5 flex ">
-        <i class="fa-solid fa-headset text-slate-300 text-4xl pr-2 pt-1"></i>
-        <section>
-          <h2 class="text-2xl text-slate-300 font-bold">24/7</h2>
-          <h4 class="text-slate-300">Customer service</h4>
+
+        <section class="w-full md:w-1/2 md:h-48">
+          <article class="w-[98%] flex md:h-48 md:bg-orange-300 rounded-lg">
+            <article class="flex pt-10 mx-auto">
+              <i
+                class="fa-solid fa-headset text-slate-900 text-4xl md:text-6xl pr-4 pt-1"
+              ></i>
+              <section>
+                <h2 class="text-4xl text-slate-900 font-extrabold">24/7</h2>
+                <h4 class="text-slate-900">Customer service</h4>
+              </section>
+            </article>
+          </article>
         </section>
-      </article>
-    </section>
-  </section>
-  </main>
-  <footer class="bg-stone-900 w-full pt-5">
-    <section id="contact" class=" width-full px-3 md:px-32 gap-2 md:gap-28 md:flex md:pt-16">
-      <section class="pb-8">
-        <section class="pb-5">
-          <h2 class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white w-8">Products</h2>
-          <h3 class="text-white hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">Serum</h3>
-          <h3 class="text-white hover:underline focus:underline decoration-white  text-xs md:text-sm">Body Cleansers</h3>
-          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Body Cleansers</h3>
+      </section>
+    </main>
+    <footer class="bg-stone-900 w-full pt-5">
+      <section
+        id="contact"
+        class="width-full px-3 md:px-32 gap-2 md:gap-28 md:flex md:pt-16"
+      >
+        <section class="pb-8">
+          <section class="pb-5">
+            <h2
+              class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white w-8"
+            >
+              Products
+            </h2>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white w-8 text-xs md:text-sm"
+            >
+              Serums
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Face Creams
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Moisturizers
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Facial Toners
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Face Cleansers
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Facial Exfoliants
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Body Exfoliants
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Body Cleansers
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Facial oils
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Body oils
+            </h3>
+          </section>
+          <section>
+            <h2
+              class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white w-8"
+            >
+              Shop
+            </h2>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              My order
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white w-8 text-xs md:text-sm"
+            >
+              Terms
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Privacy & Policy
+            </h3>
+            <h3
+              class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              Refund policy
+            </h3>
+          </section>
         </section>
-        <section>
-          <h2 class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white w-8">Shop</h2>
-          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">My order</h3>
-          <h3 class="text-white hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">Terms</h3>
-          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Privacy & Policy</h3>
-          <h3 class="text-white hover:underline focus:underline decoration-white  text-xs md:text-sm">Refund policy</h3>
+
+        <section class="w-full">
+          <section>
+            <span class="flex pb-2">
+              <i class="fa-solid fa-house-chimney text-white pr-3"></i>
+              <h3
+                class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm"
+              >
+                Accra Ghana
+              </h3>
+            </span>
+            <span class="flex pb-2">
+              <i class="fa-solid fa-envelope text-white pr-3"></i>
+              <h3
+                class="text-white text-wrap hover:underline focus:underline decoration-white w-8 text-xs md:text-sm"
+              >
+                wewobotanicalgh@gmail.com
+              </h3>
+            </span>
+            <span class="flex pb-2">
+              <i class="fa-solid fa-phone text-white pr-3"></i>
+              <h3
+                class="text-white hover:underline focus:underline decoration-white w-10 text-xs md:text-sm"
+              >
+                +233203289393
+              </h3>
+            </span>
+          </section>
+          <section class="w-full pb-16">
+            <span class="flex">
+              <i class="fa-solid fa-location-dot text-white text-xl pr-2"></i>
+              <h2
+                class="text-white hover:underline focus:underline decoration-white pt-1 text-xs md:text-sm"
+              >
+                Wewo Botanical
+              </h2>
+            </span>
+            <h3
+              class="text-white pl-6 hover:underline focus:underline decoration-white w-8 text-xs md:text-sm"
+            >
+              Ghana
+            </h3>
+            <h3
+              class="text-white pl-6 hover:underline focus:underline decoration-white w-8 text-xs md:text-sm"
+            >
+              Nigeria
+            </h3>
+            <h3
+              class="text-white pl-6 hover:underline focus:underline decoration-white text-xs md:text-sm"
+            >
+              South Africa
+            </h3>
+          </section>
+
+          <section class="py-5 mb-10 px-4">
+            <span
+              class="w-full flex gap-2 lg:gap-8 justify-center lg:justify-start"
+            >
+              <button
+                class="text-white bg-stone-950 rounded-full w-10 h-10 text-center"
+                aria-label="facebook-link"
+              >
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </button>
+              <button
+                class="text-white bg-stone-950 rounded-full w-10 h-10 text-center"
+                aria-label="instagram-link"
+              >
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </button>
+              <button
+                class="text-white bg-black rounded-full w-10 h-10 text-center"
+                aria-label="xtwitter-link"
+              >
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </button>
+              <button
+                class="text-white bg-stone-950 rounded-full w-10 h-10 text-center"
+                aria-label="snapchat-link"
+              >
+                <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+              </button>
+              <button
+                class="text-white bg-black rounded-full w-10 h-10 text-center"
+                aria-label="tiktok-link"
+              >
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              </button>
+            </span>
+          </section>
         </section>
       </section>
 
-      <section class=" w-full">
-        <section>
-          <span class="flex pb-2">
-            <i class="fa-solid fa-house-chimney text-white pr-3"></i>
-            <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Accra Ghana</h3>
-          </span>
-          <span class="flex pb-2">
-            <i class="fa-solid fa-envelope text-white pr-3"></i>
-            <h3 class="text-white text-wrap hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">wewobotanicalgh@gmail.com</h3>
-          </span>
-          <span class="flex pb-2">
-            <i class="fa-solid fa-phone text-white pr-3"></i>
-            <h3 class="text-white hover:underline focus:underline decoration-white w-10 text-xs md:text-sm">+233203289393</h3>
-          </span>
-        </section>
-        <section class="w-full pb-16">
-          <span class="flex">
-            <i class="fa-solid fa-location-dot text-white text-xl pr-2"></i>
-            <h2 class="text-white hover:underline focus:underline decoration-white pt-1 text-xs md:text-sm">Wewo Botanical</h2>
-          </span>
-            <h3 class="text-white pl-6 hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">Ghana</h3>
-            <h3 class="text-white pl-6 hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">Nigeria</h3>
-            <h3 class="text-white pl-6 hover:underline focus:underline decoration-white  text-xs md:text-sm">South Africa</h3>
-        </section>
-
-        
-        <section class=" py-5 mb-10 px-4">
-          <span class=" w-full flex gap-2 lg:gap-8 justify-center lg:justify-start">
-            <button class="text-white bg-stone-950 rounded-full w-10 h-10 text-center" aria-label="facebook-link"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
-            <button class="text-white bg-stone-950 rounded-full w-10 h-10 text-center " aria-label="instagram-link"><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
-            <button class="text-white bg-black rounded-full w-10 h-10 text-center " aria-label="xtwitter-link"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></button>
-            <button class="text-white bg-stone-950 rounded-full w-10 h-10 text-center " aria-label="snapchat-link"><a href="#"><i class="fa-brands fa-snapchat"></i></a></button>
-            <button class="text-white bg-black rounded-full w-10 h-10 text-center " aria-label="tiktok-link"><a href="#"><i class="fa-brands fa-tiktok "></i></a></button>
-          </span>
-        </section>
-
+      <section class="bg-gradient-to-b from-stone-800 to-black py-2">
+        <h3 class="text-center text-gray-600 text-xs md:text-sm">
+          &copy; 2025 Copyright Wewo Botanical Gh
+        </h3>
       </section>
-    </section>
-
-    <section class="bg-gradient-to-b from-stone-800 to-black py-2">
-       <h3 class="text-center text-gray-600 text-xs md:text-sm">
-        &copy; 2025 Copyright Wewo Botanical Gh
-    </section>
+    </footer>
     <script src="script.js"></script>
-  </footer>
-</body>
+  </body>
 </html>

@@ -19,6 +19,7 @@
     <!-- cdn for online font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="output.css">
+
   <title>Wewo</title>
 </head>
 <body class=" w-full h-svh p-0 m-0 box-border font-bodyFont">
@@ -37,7 +38,7 @@
         <li class="pt-8 list-none text-2xl w-full"><a class="decoration-0 text-white hover:underline w-full" href="index.html">Home</a></li>
         <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="products.html">Product</a></li>
         <li class="pt-8 list-none text-2xl w-full "><a class="decoration-0 text-white hover:underline w-full" href="about.html">About Us</a></li>
-        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#contain">Contact</a></li>
+        <li class="pt-8 text-2xl w-full list-none "><a class="decoration-0 text-white hover:underline w-full" href="#contact">Contact</a></li>
       </ul>
   
       <!--navigation list-->
@@ -47,7 +48,7 @@
         <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="index.html">Home</a></li>
         <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="products.html">Product</a></li>
         <li class=" text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="about.html">About Us</a></li>
-        <li class="text-2xl pr-20 list-none pt-4"><a class="decoration-0 text-white" href="#contact">Contact</a></li>
+        <li class="text-2xl pr-20 list-none pt-4"><button class="decoration-0 text-white  hover:border-orange-300 hover:border-2 transition-all hover:rounded-3xl hover:p-1 hover:px-4 hover:text-base hover:text-orange-300"><a href="#contact">Contact</a></button></li>
       </ul>
     </nav>
     
@@ -61,8 +62,8 @@
            skincare choice !
         </h5>  
         <section class="mt-10 flex gap-10 ">
-          <div><button class="bg-orange-300 rounded px-4 py-3.5 border-none text-nowrap text-stone-700">Explore More</button></div>
-          <div><button class=" bg-stone-800 px-6 py-3 border-solid border-2 border-orange-300 text-white rounded text-nowrap">Shop Now</button></div>
+          <div><button class="bg-orange-300 rounded px-4 py-3.5 border-none text-nowrap text-stone-700"><a href="/dist/about.html">Explore More</a></button></div>
+          <div><button class=" bg-stone-800 px-6 py-3 border-solid border-2 border-orange-300 text-white rounded text-nowrap"><a href="/dist/products.html">Shop Now</a></button></div>
         </section>
       </section>
       <img class="hidden md:block lg:block mt-4 mr-5 ml-auto " src="images/hero-picture.png" alt="image">
@@ -109,13 +110,15 @@
     </section>
     <!-- The about section-->
     <article class=" px-3 bg-stone-800 lg:flex justify-center w-full lg:section2-h py-10 lg:py-40 lg:px-32">
-      <video class="w-auto block mx-auto px-3" src="images/Video3-about.mp4" autoplay alt="product-image"></video>
+      <section class="w-full h-[600px]">
+        <video class="w-full h-full object-fill block mx-auto px-3"  autoplay  loop muted alt="product-video"><source src="images/Video3-about.mp4"></video>
+      </section>
       <section class="w-full lg:ml-14">
         <section class="text-center lg:text-left mt-12  w-full" >
           <h1 class="text-white text-4xl lg:text-6xl font-bold mb-3 lg:mb-14 mt-12 md:px-12">About Us</h1>
   
-          <p class="text-white md:px-12 md:text-left text-sm font-extralight md:font-light">
-            Welcome to <strong>Wewo botanical Ghana</strong>, Your trusted partner in achieving radiant, healthy skin. at Wewo Botanical, we believe that skincare is more than just a routine, - it's a journey to self-care and confidence, Rooted in the power of nature and backed by science, we create products that cater to divers skin needs, delivering effective and sustainable results. 
+          <p class="text-white md:px-12 md:text-left text-sm font-extralight md:text-base md:font-normal">
+            Welcome to Wewo botanical Ghana, Your trusted partner in achieving radiant, healthy skin. at Wewo Botanical, we believe that skincare is more than just a routine, - it's a journey to self-care and confidence, Rooted in the power of nature and backed by science, we create products that cater to divers skin needs, delivering effective and sustainable results. 
           </p>
         </section>  
         <section class="w-full pl-6 flex pt-7 gap-6 pb-5 md:px-12">
@@ -152,11 +155,11 @@
 
     <article class="width-full bg-stone-800 pb-16 px-3">
       <h2 class="text-center text-nowrap text-white text-2xl font-semibold pt-8 lg:text-4xl pb-3">Our Products</h2>
+      <hr class="text-stone-400 hidden lg:block lg:pb-10">
       <section class="flex justify-center md:w-2/3 mx-auto pb-8 pt-6 relative">
         <input class=" text-white text-xl bg-transparent border-2 border-solid border-stone-500 h-12 md:h-14 w-full rounded-3xl pr-20 pl-10" type="text" placeholder="search">
         <i class="fa-solid fa-magnifying-glass absolute text-stone-400 text-xl md:text-2xl right-10 top-9 md:top-9 z-10"></i>
       </section>
-      <hr class="text-stone-400 hidden lg:block lg:pb-10">
 
       <section class="lg:flex lg:gap-3 lg:pb-4">
         <section class= "flex w-full gap-2 lg:gap-3 pt-6">
@@ -285,9 +288,17 @@
       <section class="pb-8">
         <section class="pb-5">
           <h2 class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white w-8">Products</h2>
-          <h3 class="text-white hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">Serum</h3>
-          <h3 class="text-white hover:underline focus:underline decoration-white  text-xs md:text-sm">Body Cleansers</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white w-8 text-xs md:text-sm">Serums</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Face Creams</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Moisturizers</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Facial Toners</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Face Cleansers</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Facial Exfoliants</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Body Exfoliants</h3>
           <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Body Cleansers</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Facial oils</h3>
+          <h3 class="text-white hover:underline focus:underline decoration-white text-xs md:text-sm">Body oils</h3>
+
         </section>
         <section>
           <h2 class="text-white text-xl font-normal pb-3 hover:underline focus:underline decoration-white">Shop</h2>
