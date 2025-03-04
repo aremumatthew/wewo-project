@@ -766,6 +766,14 @@ video {
   width: 98%;
 }
 
+.w-1{
+  width: 0.25rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
 .list-none{
   list-style-type: none;
 }
